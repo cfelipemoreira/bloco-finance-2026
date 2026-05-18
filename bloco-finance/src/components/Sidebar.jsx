@@ -1,4 +1,4 @@
-export default function Sidebar({ activeTab, onTabChange }) {
+export default function Sidebar({ activeTab, onTabChange, onLogout }) {
   const tabs = [
     { id: 1, label: 'Reestruturação (leitura)' },
     { id: 2, label: 'Reestruturação (edição)' },
@@ -38,6 +38,7 @@ export default function Sidebar({ activeTab, onTabChange }) {
       </nav>
       <div className="sidebar-footer">
         <p>Felipe Moreira<br />Sócio-Fundador, BLOCO.<br />Vigência: 01/08/2026</p>
+        <button className="logout-btn" onClick={onLogout}>Sair</button>
       </div>
     </aside>
   );

@@ -619,6 +619,132 @@ p, span, td, th, label, input, select, button { font-family: 'PPTelegraf', sans-
 .gap-8 { gap: 8px; }
 .gap-12 { gap: 12px; }
 
+/* ── Login ── */
+.login-overlay {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--preto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-card {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 48px 40px 40px;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.login-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.login-logo-img {
+  width: 120px;
+  mix-blend-mode: screen;
+  filter: invert(1) brightness(0.85);
+}
+.login-logo-fallback {
+  font-family: 'PPTelegraf', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: var(--creme);
+}
+.login-sub {
+  font-family: 'PPTelegraf', sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  color: var(--verde);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.login-field label {
+  font-family: 'PPTelegraf', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.login-field input {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-family: 'PPTelegraf', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--creme);
+  outline: none;
+  transition: border-color 0.15s;
+}
+.login-field input:focus {
+  border-color: var(--azul);
+}
+.login-field input::placeholder {
+  color: #444;
+}
+.login-error {
+  font-family: 'PPTelegraf', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--bordo);
+  margin: 0;
+}
+.login-btn {
+  margin-top: 8px;
+  background: var(--azul);
+  color: var(--creme);
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-family: 'PPTelegraf', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.login-btn:hover { opacity: 0.85; }
+
+/* ── Logout ── */
+.logout-btn {
+  margin-top: 12px;
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-family: 'PPTelegraf', sans-serif;
+  font-weight: 200;
+  font-size: 11px;
+  color: #666;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.15s, border-color 0.15s;
+  width: 100%;
+}
+.logout-btn:hover {
+  color: var(--creme);
+  border-color: #555;
+}
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .sidebar { width: 64px; min-width: 64px; }
