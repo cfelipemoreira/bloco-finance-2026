@@ -6,6 +6,7 @@ export default function Sidebar({ activeTab, onTabChange, onLogout }) {
     { id: 4, label: 'Investimentos' },
     { id: 5, label: 'Simulação Mensal' },
     { id: 6, label: 'Metas de Vendas' },
+    { id: 7, label: 'Cartão de Crédito' },
   ];
 
   return (
